@@ -1,0 +1,86 @@
+<html>
+<head>
+<title>TrackIR 2 Joystick Converter</title>
+<style type="text/css">
+<!--
+body, td, th { font-family: arial,helvetica,sans-serif; font-size: 12px; }
+code { background-color: #f8f8b0; border: thin dashed #C8D0E0; display: block; margin-right: 15px; margin-left: 10px; font-size: 12px; line-height: 1.3em; }
+-->
+</style>
+</head>
+<body>
+<h1>TrackIR 2 Joystick Converter</h1>
+
+<p><b>(c) 2003 by Peter Dikant (<a href="mailto:peter@dikant.de">peter@dikant.de</a>)</b></p>
+
+<h3>What is it?</h3>
+
+<p>TrackIR can only work with games that either support the TrackIR device directly or support
+mouselook. Unfortunatly some 
+games use joystick axes to control the view. The <em>tir2joy</em>
+utility will convert mouse movements to movements of a virtual joystick device. It will enable
+the use of TrackIR in games with joystick look support (like Nascar Racing 2003 and F1 Challenge).</p>
+
+<p>If the TrackIR software has the enhanced mode activated, this mode will be used instead of the default
+mouse movement. This is the prefered operation mode for the converter.</p>
+
+<p><b>This software uses Deon van der Westhuysen's excellent virtual Joystick driver 
+<a href="http://www.geocities.com/deonvdw/PPJoy.htm">PPJoy</a>.</b></p>
+
+<h3>Installation</h3>
+
+<ol>
+<li>Get the virtual joystick driver PPJ from <a href="http://www.geocities.com/deonvdw/PPJoy.htm">
+http://www.geocities.com/deonvdw/PPJoy.htm</a></li>
+<li>Install the PPJoy software according to the PPJoy documentation</li>
+<li>Start the PPJoy <b>Configure Joysticks</b> utility, press the "Add..." button and select "Virtual port"
+in the "Parallel port" input box. Now cklick "Add".
+<li>Copy <b>tir2joy.exe</b> and <b>tir2joy.ini</b> into a directory of your choice.
+<li>Edit <b>tir2joy.ini</b> and set the keycode of the TrackIR center key <em>(not needed in enhanced mode)</em>.
+<li>Make sure that in the TrackIR driver on the HotKeys tab, the Center key is NOT trapped <em>(not needed in enhanced mode)</em>.
+
+</ol>
+
+<h3>Usage</h3>
+
+<p>Just run <b>tir2joy.exe</b> by double clicking on it.</p>
+
+<h3>Changes</h3>
+
+<p><b>Version 1.1</b></p>
+
+<p>Support for the TrackIR enhanced mode.</p>
+
+<p><b>Version 1.0</b></p>
+
+<p>Initial release</p>
+
+<h3>Software License</h3>
+
+<p>Copyright (c) 2003 Peter Dikant</p>
+
+<p>This software is released to the public domain.</p>
+
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy of 
+this software and associated documentation files (the "Software"), to deal in the 
+Software without restriction, including without limitation the rights to use, copy, 
+modify, merge, publish, distribute, and to permit persons to whom the Software is 
+furnished to do so, subject to the following conditions:</p>
+
+<p>The above copyright notice and this permission notice shall be included in all copies 
+or substantial portions of the Software.</p>
+
+<p>In order to ensure that this software stays free, selling, licensing or charging for 
+the use of this software is prohibited.</p>
+
+<p>Disclaimer</p>
+
+<p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, 
+INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR 
+PURPOSE AND NONINFRINGEMENT.IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE 
+FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR 
+OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER 
+DEALINGS IN THE SOFTWARE.</p>
+
+</body>
+</html>
